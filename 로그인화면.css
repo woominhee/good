@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(4.jpg) no-repeat;
+    background-size:cover;
+}
+header{
+    position: absolute;
+    top: 10%;
+    right: 14%;
+}
+.ID{
+    position: absolute;
+    top: 53%;
+    right: 7%;
+}
+.pw{
+    position: absolute;
+    top: 60%;
+    right: 7%;
+}
+input[type=text]{
+    width: 480px;
+    height: 40px;
+    border-radius: 20px; 
+    background-color:
+    #e6e4e4;
+    border: none;
+    font-size: 16px;
+}
+input[type=password]{
+    width: 480px;
+    height: 40px;
+    border-radius: 20px; 
+    background-color:
+    #e6e4e4;
+    border: none;
+    font-size: 16px;
+}
+input[type=checkbox]{
+    width: 20px;
+    height: 20px; 
+    border: none;
+}
+button{
+    position: absolute;
+    top: 72%;
+    right: 6%;
+    width: 500px;
+    height: 56px; 
+    border-radius: 28px;
+    background: rgb(166,242,219);
+    background: linear-gradient(90deg, rgba(166,242,219,1) 0%, rgba(97,174,174,1) 100%);
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+button:focus{
+    outline: 0;
+}
+input:focus{
+    outline: 0;
+}
+.find{
+    position: absolute;
+    top: 80%;
+    right: 17%;
+    color: gray;
+}
+label{
+    position: absolute;
+    top: 67%;
+    right: 28.5%;
+    color: gray;
+}
+
+
+
+input[id="check1"]{
+    display: none;
+}
+input[id*="check1"] + label{
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    width: 500px;
+    height: 30px;
+    padding: 20px;
+    border-bottom: 0;
+    color: white;
+    font-weight: 900;
+    background: rgb(166,242,219);
+    cursor: pointer;
+    border: none;
+}
+input[id*="check1"] + label div{
+    max-height: 0;
+    transform: all .355;
+    overflow: hidden;
+    background: #edfeed;
+    font-size: 11px;
+}
+input[id*="check1"] + label div p{
+    display: inline-block;
+    padding: 20px;
+}
+input[id*="check1"]:checked + label + div(max-height:100px)

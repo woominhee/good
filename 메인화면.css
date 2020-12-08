@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(2.jpg) no-repeat;
+    background-size:cover;
+}
+.header{
+    position: absolute;
+    top: 5%;
+    right: 3%;
+}
+.text_input{
+    position: absolute;
+    top: 12%;
+    right: 3%;
+}
+li {
+    display: inline;
+    }
+.navbar{
+    position:absolute;
+    top:25%;
+    left:17%;
+    transform:translateX(-50%);
+    width:510px;}
+.navbar2{
+    position:absolute;
+    top:25%;
+    left:50%;
+    transform:translateX(-50%);
+    width:510px;}
+.navbar3{
+    position:absolute;
+    top:25%;
+    left:83%;
+    transform:translateX(-50%);
+    width:510px;}
+input[id*="check"]{
+    display:none;
+}
+input[id*="check"] + label{
+    display:block;
+    padding:20px;
+    border-bottom:0;
+    color:#fff;
+    font-weight:900;
+    background: rgb(166,237,242);
+    background: linear-gradient(90deg, rgba(166,237,242,1) 0%, rgba(104,197,235,1) 100%);
+    cursor:pointer;
+    position:relative;
+    text-align: center;
+}
+input[id*="check"] + label + div {
+    max-height:0;
+    transition: all .35s;
+    overflow:hidden;
+    background:wheatf;
+    font-size:11px;
+}
+input[id*="check"] + label + div p {
+    display:inline-block;
+    padding:20px;
+}
+input[id*="check"]:checked + label + div {
+    max-height:1000px;
+}
+input[id*="check"]:checked + label em {
+    background-position:0 -30px;
+}
+h3{
+    position:absolute;
+    top:33%;
+    left:2.5%;
+    color:#376bff;
+}
+.poll{
+    position:absolute;
+    top:38%;
+    left:2.5%;
+}
